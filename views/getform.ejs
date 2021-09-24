@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Please submit the form</title>
+		<style>
+			h2 {text-align:center}
+			label {font-weight:600}
+			input {width:80%;clear:both;margin-bottom:1rem}
+			button {clear:both;text-align:center}
+		</style>
+	</head>
+	<body>
+		<div style="max-width:500px;height:auto;margin:auto">
+			<h2>Submit the form</h2>
+			<form method="POST" action='/submit' enctype="multipart/form-data">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="cust_name" /></br>
+				<label for="age">Age</label>
+				<input type="number" id="age" name="cust_age" /></br>
+				<label for="image">Choose your image</label>
+				<input type="file" accept=".jpg, .jpeg, .png" id="image" name="cust_image" /></br>
+				<div style="height:auto;width:100%;text-align:center">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script>
+
+	</script>
+</html>
